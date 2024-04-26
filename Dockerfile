@@ -44,6 +44,8 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 COPY . .
 # Run the build script.
 RUN npm run build
+RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
+
 
 ################################################################################
 # Create a new stage to run the application with minimal runtime dependencies
