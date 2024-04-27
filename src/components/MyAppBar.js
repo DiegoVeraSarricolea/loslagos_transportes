@@ -10,7 +10,9 @@ export default function MyAppBar() {
             sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
         >
             <Toolbar sx={{ flexWrap: 'wrap' }}>
-            <img alt="logo" width={86} height={57} src="../../transloslagos.png" />
+                <Link variant="button" href="/">
+                <img alt="logo" width={86} height={57} src="../../transloslagos.png" />
+                </Link>
             <Typography variant="h6" color="inherit" align='left' paddingLeft={1} noWrap sx={{ flexGrow: 1 }}>
 
             </Typography>
