@@ -11,18 +11,6 @@ import Container from '@mui/material/Container';
 import WhatsAppContact from './WhatsAppContact';
 
 
-/* function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Transportes Los Lagos
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-} */
 
 const tiers = [
   {

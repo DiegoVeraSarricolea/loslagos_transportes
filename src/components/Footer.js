@@ -13,6 +13,19 @@ const footers = [
     },
   ];
 
+function Copyright(props) {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+      {'Copyright © '}
+      <Link color="inherit" href="/">
+        Transportes Los Lagos
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
+
 export default function Footer () {
     return (
         <div>
@@ -43,7 +56,7 @@ export default function Footer () {
                 </Grid>
             ))}
             </Grid>
-            {/* <Copyright sx={{ mt: 5 }} /> */}
+            <Copyright sx={{ mt: 5 }} />
         </Container>
         </div>
     );
