@@ -17,7 +17,7 @@ import Container from '@mui/material/Container';
 import WhatsAppContact from './WhatsAppContact';
 
 
-function Copyright(props) {
+/* function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
@@ -28,7 +28,7 @@ function Copyright(props) {
       {'.'}
     </Typography>
   );
-}
+} */
 
 const tiers = [
   {
@@ -104,7 +104,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="text.primary"
-              href="nosotros"
+              href="/nosotros"
               sx={{ my: 1, mx: 1.5 }}
             >
               Nosotros
@@ -220,7 +220,7 @@ export default function Pricing() {
             </Grid>
           ))}
         </Grid>
-        <Copyright sx={{ mt: 5 }} />
+        {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
       {/* End footer */}
     </ThemeProvider>
