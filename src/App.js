@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import RoutesWeb from './routes';
 import MyAppBar from './components/MyAppBar'
+import Footer from './components/Footer'
 
 import { createBrowserHistory } from 'history'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
@@ -18,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={defaultTheme}>
-      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
-      <CssBaseline />
+        <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
+        <CssBaseline />
         <MyAppBar />
         <RoutesWeb history={history}/>
         <FloatingWhatsApp
@@ -30,6 +31,7 @@ function App() {
           statusMessage='En Linea'
           avatar={karina}
         ></FloatingWhatsApp>
+        <Footer />
       </ThemeProvider>
       
 {/*         <a href="https://api.whatsapp.com/send?phone=56959581552" target='_blank'>Contáctanos por WhatsApp</a> */}
