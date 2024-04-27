@@ -1,12 +1,16 @@
 import './App.css';
-import Pricing from './components/Pricing'
+import React from 'react';
+import RoutesWeb from './routes';
+import { createBrowserHistory } from 'history'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import karina  from './karina.jpg'
+
+const history = createBrowserHistory()
 
 function App() {
   return (
     <div className="App">
-      <Pricing></Pricing>
+      <RoutesWeb history={history}/>
       <FloatingWhatsApp
         phoneNumber='56975765403'
         accountName='Karina Vera'
