@@ -13,7 +13,7 @@ const RoutesWeb = () => {
     <Router>
         <Routes>
             <Route exact path="/" element={<Pricing />} />
-        {/* <Route path="/nosotros" component={About} /> */}
+            {/* <Route path="/nosotros" element={<About />} /> */}
         </Routes>
     </Router>
     );
