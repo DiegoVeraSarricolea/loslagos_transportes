@@ -15,24 +15,24 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'Puerto Varas',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSj_2a5S0sbVn8U8q76tI8DKK8324OkWhGhE5qo8Lxipogb_Ts2bt6lm2J8aWHn226eunC3-2vp-jg5KZyinQn4rTTnjUrb6tvw-Invvg',
   },
   {
-    label: 'Bird',
+    label: 'Chiloe',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTeh5AGPCbZJHqGC8SP2QDwOXC3QJjaI7eElvQoC49DvZv2ruhX6S3VC84vEp7m9jBxB9ZDdUgXqfJIqSaNxs7EuDrDlHrPGZ89Y1XSjg',
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'Hornopirén',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+      'https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSqVHyBWQQg6Qr3JjEX5WsMY9OaffRyuW0CJNPrMNSYcEmmd0r4nckh4UIrZ26-yioC8pWORuLWRqybw8-1nY5blb_NUauzTpi3ZjJKySU',
   },
   {
-    label: 'Goč, Serbia',
+    label: 'Aeropuerto',
     imgPath:
-      'https://i.pinimg.com/originals/1f/6f/88/1f6f88acd68ba05da46838932162a14b.jpg',
+      'https://www.sacyr.com/documents/121856245/121929501/el+tepual_5.jpg/0e520836-b9ef-d5b1-6b6c-c75e783e6698?t=1675350905064',
   },
 ];
 
