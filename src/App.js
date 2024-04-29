@@ -12,7 +12,23 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import karina  from './karina.jpg'
 
-const defaultTheme = createTheme()
+const defaultTheme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#484069',
+      light: '#5F5465',
+      dark: '#261D2C',
+      contrastText: '#fff',
+    },
+    secondary: {
+      main: 'E7DFF7',
+      light: '#5F5465',
+      dark: '#261D2C',
+      contrastText: '#fff'
+    },
+  },
+})
 const history = createBrowserHistory()
 
 function App() {

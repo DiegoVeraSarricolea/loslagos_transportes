@@ -91,15 +91,12 @@ export default function Pricing() {
                   title={tier.title}
                   subheader={tier.subheader}
                   titleTypographyProps={{ align: 'center' }}
-                  action={tier.title === 'Común Acuerdo' ? <StarIcon /> : null}
+                  action={tier.title === 'Aeropuerto' ? <StarIcon /> : null}
                   subheaderTypographyProps={{
                     align: 'center',
                   }}
                   sx={{
-                    backgroundColor: (theme) =>
-                      theme.palette.mode === 'light'
-                        ? theme.palette.grey[200]
-                        : theme.palette.grey[700],
+                    backgroundColor: '#D9CAFF'
                   }}
                 />
                 <CardContent>
@@ -129,7 +126,7 @@ export default function Pricing() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <WhatsAppContact tierVariant={tier.buttonVariant}>
+                  <WhatsAppContact tierVariant={tier.buttonVariant} >
                     {tier.buttonText}
                   </WhatsAppContact>
                 </CardActions>

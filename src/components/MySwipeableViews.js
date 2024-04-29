@@ -97,6 +97,7 @@ export default function MySwipeableViews() {
       <MobileStepper
         steps={maxSteps}
         position="static"
+        alignSelf="center"
         activeStep={activeStep}
         nextButton={
           <Button

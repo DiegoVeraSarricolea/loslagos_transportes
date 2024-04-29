@@ -5,7 +5,7 @@ export default function MyAppBar() {
     return (
         <AppBar
             position="static"
-            color="default"
+            color="primary"
             elevation={0}
             sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
         >
@@ -19,7 +19,7 @@ export default function MyAppBar() {
             <nav>
                 <Link
                 variant="button"
-                color="text.primary"
+                color="inherit"
                 href="/nosotros"
                 sx={{ my: 1, mx: 1.5 }}
                 >
