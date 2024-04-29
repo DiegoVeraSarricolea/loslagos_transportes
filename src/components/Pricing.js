@@ -1,34 +1,16 @@
 import * as React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
-import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import StarIcon from '@mui/icons-material/StarBorder';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 import WhatsAppContact from './WhatsAppContact';
 
 
-/* function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Transportes Los Lagos
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-} */
 
 const tiers = [
   {
@@ -70,48 +52,12 @@ const tiers = [
   },
 ];
 
-const footers = [
-  {
-    title: 'Conductores',
-    description: ['Karina Vera', 'Patricio Lara'],
-  },
-  {
-    title: 'Oficina',
-    description: ['Isla San Ambrosio 6484 Puerta Sur', 'Puerto Montt',],
-  },
-];
 
 // TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
 
 export default function Pricing() {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
-      <CssBaseline />
-      <AppBar
-        position="static"
-        color="default"
-        elevation={0}
-        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
-      >
-        <Toolbar sx={{ flexWrap: 'wrap' }}>
-        <img alt="logo" width={86} height={57} src="../../transloslagos.png" />
-          <Typography variant="h6" color="inherit" align='left' paddingLeft={1} noWrap sx={{ flexGrow: 1 }}>
-
-          </Typography>
-          <nav>
-            <Link
-              variant="button"
-              color="text.primary"
-              href="/nosotros"
-              sx={{ my: 1, mx: 1.5 }}
-            >
-              Nosotros
-            </Link>
-          </nav>
-        </Toolbar>
-      </AppBar>
+    <div>
       {/* Hero unit */}
       <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
         <Typography
@@ -145,15 +91,12 @@ export default function Pricing() {
                   title={tier.title}
                   subheader={tier.subheader}
                   titleTypographyProps={{ align: 'center' }}
-                  action={tier.title === 'Común Acuerdo' ? <StarIcon /> : null}
+                  action={tier.title === 'Aeropuerto' ? <StarIcon /> : null}
                   subheaderTypographyProps={{
                     align: 'center',
                   }}
                   sx={{
-                    backgroundColor: (theme) =>
-                      theme.palette.mode === 'light'
-                        ? theme.palette.grey[200]
-                        : theme.palette.grey[700],
+                    backgroundColor: '#D9CAFF'
                   }}
                 />
                 <CardContent>
@@ -183,7 +126,7 @@ export default function Pricing() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <WhatsAppContact tierVariant={tier.buttonVariant}>
+                  <WhatsAppContact tierVariant={tier.buttonVariant} >
                     {tier.buttonText}
                   </WhatsAppContact>
                 </CardActions>
@@ -192,37 +135,6 @@ export default function Pricing() {
           ))}
         </Grid>
       </Container>
-      {/* Footer */}
-      <Container
-        maxWidth="md"
-        component="footer"
-        sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          mt: 8,
-          py: [3, 6],
-        }}
-      >
-        <Grid container spacing={4} justifyContent="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="text.primary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-        {/* <Copyright sx={{ mt: 5 }} /> */}
-      </Container>
-      {/* End footer */}
-    </ThemeProvider>
+    </div>
   );
 }
