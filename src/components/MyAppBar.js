@@ -25,6 +25,14 @@ export default function MyAppBar() {
                 >
                 Nosotros
                 </Link>
+                <Link
+                variant="button"
+                color="inherit"
+                href="/Reservar"
+                sx={{ my: 1, mx: 1.5 }}
+                >
+                Reservar
+                </Link>
             </nav>
             </Toolbar>
         </AppBar>
