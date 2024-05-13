@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
 
-const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+const steps = ['Datos y fecha', 'Punto de Partida', 'Destino'];
 
 
 export default function Reserve() {
@@ -59,6 +59,9 @@ export default function Reserve() {
 
     return (
         <Container>
+            <Typography align='center' variant='h3'>
+                Reserva Online
+            </Typography>
             <Box sx={{ width: '100%' }}>
             <Stepper activeStep={activeStep}>
                 {steps.map((label, index) => {
